@@ -1,3 +1,3 @@
-# rgb-controll
+# RGb Controll
 
 Controller for RGB Strip
