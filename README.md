@@ -1,5 +1,3 @@
-# RGB Controll
-
 Controller for RGB Strip.
 ---
 Comand line usage:
