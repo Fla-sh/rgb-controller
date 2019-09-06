@@ -1,7 +1,8 @@
 import neopixel
+from Programs.ProgramAbstract import ProgramAbstract
 
 
-class ProgramWhite():
+class ProgramWhite(ProgramAbstract):
     def __init__(self, pixels: neopixel.NeoPixel, brightness):
         super().__init__(pixels, brightness)
 
