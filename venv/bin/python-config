@@ -1,4 +1,4 @@
-#!/home/piotr/python/rgb-controll/venv/bin/python
+#!/home/piotr/Documents/python/rgb-controll/venv/bin/python
 
 import sys
 import getopt

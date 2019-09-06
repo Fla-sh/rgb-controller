@@ -1,5 +1,3 @@
-import neopixel
-import board
 from AvailablePrograms import AvailablePrograms
 import board
 from neopixel import NeoPixel
@@ -7,6 +5,7 @@ from Programs.ProgramWhite import ProgramWhite
 from Programs.ProgramBlue import ProgramBlue
 from Programs.ProgramRed import ProgramRed
 from Programs.ProgramYellow import ProgramYellow
+from Programs.ProgramGreen import ProgramGreen
 
 
 class RGBController:
@@ -25,20 +24,22 @@ class RGBController:
 
     def run(self):
         if self.program == AvailablePrograms.white.name:
-            ProgramWhite(self.pixels).run()
+            ProgramWhite(self.pixels, self.brightness).run()
         elif self.program == AvailablePrograms.red.name:
-            ProgramRed(self.pixels).run()
+            ProgramRed(self.pixels, self.brightness).run()
         elif self.program == AvailablePrograms.blue.name:
-            ProgramBlue(self.pixels).run()
+            ProgramBlue(self.pixels, self.brightness).run()
         elif self.program == AvailablePrograms.green.name:
-            ProgramYellow(self.pixels).run()
+            ProgramYellow(self.pixels, self.brightness).run()
         elif self.program == AvailablePrograms.yellow.name:
-            ProgramYellow(self.pixels).run()
+            ProgramYellow(self.pixels, self.brightness).run()
+        elif self.program == AvailablePrograms.green.name:
+            ProgramGreen(self.pixels, self.brightness)
         else:
             print("Program {} unknown".format(self.program))
+
     def set_program(self, name: AvailablePrograms):
         self.program = name
 
     def set_brightness(self, value: int):
-        self.brightness = value / 100
-        self.
+        self.brightness = value

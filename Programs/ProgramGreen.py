@@ -1,12 +1,12 @@
 import neopixel
+from Programs.ProgramAbstract import ProgramAbstract
 
 
-class ProgramWhite():
-    def __init__(self, pixels: [neopixel.NeoPixel]):
-        self.pixels: neopixel.NeoPixel
-
-        self.pixels = pixels
+class ProgramGreen(ProgramAbstract):
+    def __init__(self, pixels: neopixel.NeoPixel, brightness):
+        super().__init__(pixels, brightness)
 
     def run(self):
-        self.pixels.fill((0,255,0))
+        color = self.dim((0, 255, 0))
+        self.pixels.fill(color)
         self.pixels.show()

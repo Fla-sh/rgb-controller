@@ -1,5 +1,4 @@
 import enum
-from Programs.ProgramWhite import ProgramWhite
 
 
 class AvailablePrograms(enum.Enum):
@@ -8,3 +7,4 @@ class AvailablePrograms(enum.Enum):
     green = 2
     blue = 3
     yellow = 4
+    off = 5

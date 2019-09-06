@@ -1,1 +1,1 @@
-/usr/local/lib/python3.6/sre_compile.py
+/home/piotr/.pyenv/versions/3.6.8/lib/python3.6/sre_compile.py

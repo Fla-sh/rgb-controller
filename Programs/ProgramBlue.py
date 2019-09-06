@@ -2,11 +2,10 @@ import neopixel
 
 
 class ProgramBlue():
-    def __init__(self, pixels: neopixel.NeoPixel):
-        self.pixels: neopixel.NeoPixel
-
-        self.pixels = pixels
+    def __init__(self, pixels: neopixel.NeoPixel, brightness):
+        super().__init__(pixels, brightness)
 
     def run(self):
-        self.pixels.fill((0,0,255))
+        color = self.dim((0, 0, 255))
+        self.pixels.fill(color)
         self.pixels.show()
