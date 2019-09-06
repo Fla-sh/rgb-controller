@@ -10,7 +10,7 @@ class Parser:
         self.arguments: str
         self.parser: argparse.ArgumentParser
 
-        self.arguments = arguments
+        self.arguments = arguments[1:]
 
     def parse(self):
         self.create_parser()
@@ -21,13 +21,10 @@ class Parser:
         self.parser.add_argument("program",
                                  choices=[program.name for program in AvailablePrograms],
                                  type=str,
-                                 required=True,
                                  help="Program to run on Stripe")
 
         self.parser.add_argument("brightness",
                                  type=int,
-                                 required=True,
-                                 default=100,
                                  help="Brightness on LEDs, default 100")
 
     def create_parser(self):

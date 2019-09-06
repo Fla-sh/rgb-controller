@@ -1,1 +1,1 @@
-/home/piotr/.pyenv/versions/3.6.8/lib/python3.6/random.py
+/usr/local/lib/python3.6/random.py

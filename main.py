@@ -17,6 +17,7 @@ class Main:
         self.controller = RGBController()
 
     def run(self):
+        # print(self.namespace)
         self.controller.set_brightness(
             self.namespace.brightness
         )

@@ -21,7 +21,7 @@ class RGBController:
                                brightness=1)
 
         self.brightness: float
-        self.brightness = 1
+        self.brightness = None
 
     def run(self):
         if self.program == AvailablePrograms.white.name:
@@ -36,9 +36,9 @@ class RGBController:
             ProgramYellow(self.pixels).run()
         else:
             print("Program {} unknown".format(self.program))
-
     def set_program(self, name: AvailablePrograms):
         self.program = name
 
     def set_brightness(self, value: int):
         self.brightness = value / 100
+        self.
