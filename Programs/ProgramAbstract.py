@@ -16,10 +16,15 @@ class ProgramAbstract:
 
         if brightness is None:
             brightness = self.brightness
-        else:
-            brightness = max(brightness, 255)
+
+        brightness = min(brightness, 255)
+        brightness = max(brightness, 0)
 
         color_r *= brightness / 255
         color_g *= brightness / 255
         color_b *= brightness / 255
+
+        color_r = int(color_r)
+        color_g = int(color_g)
+        color_b = int(color_b)
         return color_r, color_g, color_b

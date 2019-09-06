@@ -8,5 +8,6 @@ class ProgramRed(ProgramAbstract):
 
     def run(self):
         color = self.dim((255, 0, 0))
+        print(color)
         self.pixels.fill(color)
         self.pixels.show()

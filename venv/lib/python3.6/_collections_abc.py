@@ -1,1 +1,1 @@
-/home/piotr/.pyenv/versions/3.6.8/lib/python3.6/_collections_abc.py
+/usr/local/lib/python3.6/_collections_abc.py
