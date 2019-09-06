@@ -4,7 +4,7 @@ Controller for RGB Strip.
 Comand line usage:
 `sudo main.py program brightness`
 
-Current programs
+###Current programs
 - white
 - yellow
 - blue
