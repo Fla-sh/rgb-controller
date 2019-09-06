@@ -1,8 +1,7 @@
 import neopixel
-from Programs.ProgramAbstract import ProgramAbstract
 
 
-class ProgramAbstract(ProgramAbstract):
+class ProgramAbstract:
     def __init__(self, pixels: neopixel.NeoPixel, brightness: int):
         self.pixels: neopixel.NeoPixel
         self.pixels = pixels
