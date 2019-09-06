@@ -28,3 +28,4 @@ class ProgramAbstract:
         color_g = int(color_g)
         color_b = int(color_b)
         return color_r, color_g, color_b
+

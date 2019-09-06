@@ -10,3 +10,4 @@ class ProgramYellow(ProgramAbstract):
         color = self.dim((255, 255, 0))
         self.pixels.fill(color)
         self.pixels.show()
+        print("Current color {}".format(color))

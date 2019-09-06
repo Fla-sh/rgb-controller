@@ -9,3 +9,4 @@ class ProgramOff(ProgramAbstract):
     def run(self):
         self.pixels.fill((0,0,0))
         self.pixels.show()
+        print("Current color {}".format(color))

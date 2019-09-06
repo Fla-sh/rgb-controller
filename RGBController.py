@@ -9,6 +9,9 @@ from Programs.ProgramGreen import ProgramGreen
 
 
 class RGBController:
+    """
+    Controls which program ought to be executed
+    """
     def __init__(self):
         self.program: AvailablePrograms
         self.program = None

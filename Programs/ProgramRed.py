@@ -11,3 +11,4 @@ class ProgramRed(ProgramAbstract):
         print(color)
         self.pixels.fill(color)
         self.pixels.show()
+        print("Current color {}".format(color))
